@@ -4,7 +4,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 mkdir -p "$XDG_CONFIG_HOME"
 
 sudo apt update
-sudo apt install ripgrep git lazygit curl tar
+sudo apt install ripgrep git curl tar
 
 git clone https://github.com/borasemiz/my-nvim.git "$XDG_CONFIG_HOME/nvim"
 
