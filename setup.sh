@@ -10,6 +10,7 @@ git clone https://github.com/borasemiz/my-nvim.git "$XDG_CONFIG_HOME/nvim"
 
 wget -O "$HOME/nvim-linux64.tar.gz" https://github.com/neovim/neovim/releases/download/v0.10.2/nvim-linux64.tar.gz
 echo $(pwd)
-tar xzf "$HOME/nvim-linux64.tar.gz"
+mkdir -p "$HOME/nvim-linux64"
+tar xzf "$HOME/nvim-linux64.tar.gz" -C "$HOME/nvim-linux64"
 
 echo "export PATH=$PATH:$HOME/nvim-linux64/bin" >>"$HOME/.bashrc"
